@@ -19,13 +19,9 @@ body {
   }
   
   .install {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 30%;
+    width: 40%;
     text-align: center;
-    margin: 0px;
-    margin-left: 0px;
+    margin: 0px auto;
     background-color: white;
   }
   
@@ -67,9 +63,10 @@ body {
   }
   
   .footer { 
-    width: 30%;
-    position: fixed;
+    display: block;
+    width: 40%;
     bottom: 80px;
+    margin: 40px auto;
     text-align: center;
     z-index: -1;
   }
