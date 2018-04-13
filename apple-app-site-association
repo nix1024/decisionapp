@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "792KR8X8AU.com.nixwang.decision",
+                "paths": [ "/decision/*"]
+            }
+        ]
+    }
+} 

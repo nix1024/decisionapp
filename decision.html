@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="install">
+	        <div class="install-content">
+	            <img src="/icon.png"/>
+	            <h1>{{ name }}</h1>
+	            <p>{{ description }}</p>
+	            <a href="https://itunes.apple.com/cn/app/id1338769645"><img src="images/download.svg"/></a>
+	        </div>
+	    </div>
+	    <div class="preview">
+	    	<img src="images/screenshot.png"/>
+	    </div>
+	   	<div class="footer">
+	        <p>Tiny Decisions</p>
+	    </div>
+	</div>
+    <script>
+	    var app = new Vue({
+	        el: '#app',
+	        data: {
+	            name: "Tiny Decisions",
+	            description: "Tiny Decisions is a app to make all decisions fun & easy! Just input your question, add options and spin the wheel to get a random answer!",
+	        },
+	        created: function() {
+	            var lang = navigator.language;
+	            if (lang.startsWith("zh-Hans") || lang.startsWith("zh-CN")) {
+	                this.name = "小决定";
+	                this.description = "小决定是一个用来帮助你快速做决定的应用。输入你纠结的问题，添加或者导入所有的选项，用转盘来快速决定！";
+	            } else if (lang.startsWith("zh-Hant")) {
+	                this.name = "小決定";
+	                this.description = "小決定是一個用來幫助你快速做決定的應用。輸入你糾結的問題，添加或者導入所有的選項，用轉盤來快速決定！";
+	            }
+	        }
+	    })
+	</script>
+</body>
+</html>
